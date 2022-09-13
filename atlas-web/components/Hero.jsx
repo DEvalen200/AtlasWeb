@@ -5,6 +5,7 @@ import {useRef, useEffect} from 'react';
 import { formParameters } from './modifyPDF';
 import FileSaver, { saveAs } from 'file-saver';
 import html2canvas from 'html2canvas';
+import Link from 'next/link'
 
 var signaturePad;
 var canvas;
@@ -272,7 +273,7 @@ export const Hero = () => {
                 </form>
                 <div className="flex items-center mb-4">
                         <input id="checkbox" type="checkbox" value="" className="w-4 h-4 accent-teal-600"/>
-                        <label className="ml-2 text-sm font-medium text-gray-900">Acepto la <a href="/politicas#datos" className="text-teal-600 hover:underline">Política de protección de datos</a> y la <a href="politicas#imagen" className="text-teal-600 hover:underline">Política de derechos de imagen</a>.</label>
+                        <label className="ml-2 text-sm font-medium text-gray-900">Acepto la <Link href="/politicas"><a className="text-teal-600 hover:underline">Política de protección de datos</a></Link> y la <Link href="politicas"><a className="text-teal-600 hover:underline">Política de derechos de imagen</a></Link>.</label>
                     </div>
                     <div className="mb-1">
                         <label className="block text-gray-700 text-sm font-bold mb-2" id='firmaText'>
@@ -307,7 +308,7 @@ export const Hero = () => {
                 </div>
                 <div className="">
                     <p className="block text-gray-700 text-lg font-normal mb-2 text-center">
-                        ¡Envía la solicitud descargada a nuestro correo <a className=' text-teal-600' href = "mailto: club@atletismeatlas.es!">club@atletismeatlas.es</a>!
+                        ¡Envía la solicitud descargada a nuestro correo <a className=' text-teal-600' href = "mailto: club@atletismeatlas.es">club@atletismeatlas.es</a>!
                     </p>
                     <img src="/DocumentoDescargado.png" className=' shadow-lg'/>
                 </div>
