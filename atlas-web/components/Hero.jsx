@@ -272,7 +272,7 @@ export const Hero = () => {
                 </form>
                 <div className="flex items-center mb-4">
                         <input id="checkbox" type="checkbox" value="" className="w-4 h-4 accent-teal-600"/>
-                        <label className="ml-2 text-sm font-medium text-gray-900">Acepto la <a href="/proteccion-de-datos" className="text-teal-600 hover:underline">Política de protección de datos</a> y la <a href="politica-derechos-imagen" className="text-teal-600 hover:underline">Política de derechos de imagen</a>.</label>
+                        <label className="ml-2 text-sm font-medium text-gray-900">Acepto la <a href="/politicas#datos" className="text-teal-600 hover:underline">Política de protección de datos</a> y la <a href="politicas#imagen" className="text-teal-600 hover:underline">Política de derechos de imagen</a>.</label>
                     </div>
                     <div className="mb-1">
                         <label className="block text-gray-700 text-sm font-bold mb-2" id='firmaText'>

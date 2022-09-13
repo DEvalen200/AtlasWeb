@@ -16,10 +16,10 @@ export default function Home() {
         {/*<!-- Open Graph / Facebook -->*/}
         <meta property="og:type" content="website"/>
         <meta property="og:url" content="https://atletismeatlas.es/solicitud-socio"/>
-        <meta property="og:title" content="CA Atlas &#127760;"/>
+        <meta property="og:title" content="Portal de Solicitud de Socio del Club Atletisme Atlas &#127760;"/>
         <meta property="og:description" content="Punto de partida para unos nuevos ilímites."/>
         <meta property="og:image" content="https://atletismeatlas.es/Link%20Preview/OG_Preview.png"/>
-        <meta property="og:site_name" content="CA Atlas &#127760;"/>
+        <meta property="og:site_name" content="Portal de Solicitud de Socio del Club Atletisme Atlas &#127760;"/>
         {/*<!-- Twitter -->*/}
         <meta property="twitter:card" content="summary_large_image"/>
         <meta property="twitter:image" content="https://atletismeatlas.es/Link%20Preview/Twitter_Preview.png"/>
