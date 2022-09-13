@@ -221,7 +221,7 @@ export const Hero = () => {
             </div>
 
             {/* FORM */}
-            <div className='w-full desktop:max-w-lg desktop:min-w-[32rem] tablet:mx-auto  z-[2] bg-white shadow-2xl shadow-black rounded-xl px-8 pt-6 pb-8 h-fit my-10 mobile:w-fit mobile:mx-4'>
+            <div className='w-full desktop:max-w-lg desktop:min-w-[32rem] tablet:w-fit  z-[2] bg-white shadow-2xl shadow-black rounded-xl px-8 pt-6 pb-8 h-fit my-10 mobile:w-fit mobile:mx-4 tablet:mx-4'>
                 <form className="" autoComplete="off" id='Form'>
                     <div className="mb-4 text-center">
                         <label className="block text-gray-700 text-lg font-bold mb-2">
@@ -279,17 +279,15 @@ export const Hero = () => {
                         <label className="block text-gray-700 text-sm font-bold mb-2" id='firmaText'>
                             Firma
                         </label>
-                        <div className='border shadow rounded' id="signaturePadDiv">
-                            <canvas className=' w-full' id="signaturePadCanvas">
+                        <div className='max-w-[446px] mx-auto' id="signaturePadDiv">
+                            <canvas className='border shadow rounded  w-full' id="signaturePadCanvas">
                             </canvas>
+                            <button className=" mb-4 bg-rose-500 hover:bg-rose-700 text-black py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button"
+                            onClick={clearSignaturePad}>
+                                    Borrar
+                            </button>
                         </div>
                     </div>
-                <div className="flex items-center justify-between">
-                    <button className=" mb-4 bg-rose-500 hover:bg-rose-700 text-black py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button"
-                    onClick={clearSignaturePad}>
-                            Borrar
-                    </button>
-                </div>
                 <div className="flex items-center justify-between">
                     <button className="bg-teal-300 hover:bg-teal-700 text-black py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button"
                         onClick={validateForm}>
