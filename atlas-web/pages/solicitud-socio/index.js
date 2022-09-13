@@ -15,7 +15,7 @@ export default function Home() {
 
         {/*<!-- Open Graph / Facebook -->*/}
         <meta property="og:type" content="website"/>
-        <meta property="og:url" content="https://atletismeatlas.es"/>
+        <meta property="og:url" content="https://atletismeatlas.es/solicitud-socio"/>
         <meta property="og:title" content="CA Atlas &#127760;"/>
         <meta property="og:description" content="Punto de partida para unos nuevos ilímites."/>
         <meta property="og:image" content="https://atletismeatlas.es/Link Preview/OG_Preview.png"/>
