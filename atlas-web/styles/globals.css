@@ -9,4 +9,47 @@ html{
 
 .custom-img{
   background-image: url("https://images.unsplash.com/photo-1478860409698-8707f313ee8b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80");
+  background-blend-mode: multiply;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.texto-capturar{
+  line-height: 100%;
+  width: 450px;
+  font-size: 12px;
+  height: fit-content;
+  text-align: justify;
+  font-family: 'Tahoma';
+}
+
+.color-atlas-300
+{
+  color: rgb(0, 128, 128);
+}
+
+.border-color-atlas-300
+{
+  border-color: rgb(0, 128, 128);
+}
+
+.sociosMediaQuery{
+  display: flex;
+}
+
+@media (max-width: 1200px) {
+  .sociosMediaQuery{
+    display: block;
+  }
 }
