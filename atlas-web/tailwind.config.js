@@ -7,10 +7,13 @@ module.exports = {
   theme: {
     extend: {},
     screens: {
-      'mobile': '420px',
-      // => @media (min-width: 640px) { ... }
+      'mobile': '0px',
+      // => @media (min-width: 100px) { ... }
 
-      'desktop': '1201px',
+      'tablet': '800px',
+      // => @media (min-width: 800px) { ... }
+
+      'desktop': '1200px',
       // => @media (min-width: 1280px) { ... }
     },
   },
