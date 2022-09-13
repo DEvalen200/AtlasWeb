@@ -302,7 +302,7 @@ export const Hero = () => {
             <div className='w-full max-w-sm z-[2] bg-white shadow-2xl shadow-black rounded-xl px-8 pt-6 pb-8 h-fit my-10 desktop:mx-10 mobile:mx-auto'>
                 <div className="mb-4">
                     <label className="block text-gray-700 text-lg font-bold mb-2 text-center">
-                        ÚLTIMO PASO
+                        ÚLTIMO PASO.
                     </label>
                 </div>
                 <div className="">
