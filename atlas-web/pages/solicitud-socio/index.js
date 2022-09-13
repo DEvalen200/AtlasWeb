@@ -22,6 +22,7 @@ export default function Home() {
         <meta property="og:site_name" content="CA Atlas &#127760;"/>
         {/*<!-- Twitter -->*/}
         <meta property="twitter:card" content="summary_large_image"/>
+        <meta property="twitter:image" content="https://atletismeatlas.es/Link Preview/Twitter_Preview.png"/>
       </Head>
       <Hero/>
     </div>
