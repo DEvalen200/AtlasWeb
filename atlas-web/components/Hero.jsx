@@ -210,7 +210,7 @@ export const Hero = () => {
                     <br />
                     <p className="block text-gray-700 text-lg font-normal text-center">
                         Completa el siguiente formulario con los datos personales requeridos.<br/><br/>
-                        Una vez completado, podrás descargar la documentación correspondiente y finalizar el proceso de solicitud del puesto de Socio No Atleta del Club Atletisme Atlas.
+                        Una vez completado, podrás descargar la documentación correspondiente y finalizar el proceso de solicitud del puesto de <b>Socio No Atleta</b> <b>del Club Atletisme Atlas</b>.
                     </p>
                     <br />
                     <hr className=' border-2 border-color-atlas-300 mx-10' />
