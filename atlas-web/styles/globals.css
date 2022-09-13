@@ -48,8 +48,8 @@ input[type=number] {
   display: flex;
 }
 
-@media (max-width: 1200px) {
+/*@media (max-width: 1200px) {
   .sociosMediaQuery{
     display: block;
   }
-}
+}*/

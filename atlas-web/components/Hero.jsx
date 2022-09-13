@@ -188,9 +188,9 @@ export const Hero = () => {
         {/* Overlay */}
         {/*<div className='fixed top-0 left-0 right-0 bottom-0 bg-black/70 z-[2]'/>*/}
         
-        <section className='sociosMediaQuery'>
+        <section className=' mobile:block desktop:flex'>
             {/* BIENVENIDO */}
-            <div className='w-full desktop:max-w-sm z-[2] bg-white shadow-2xl shadow-black rounded-xl px-8 pt-6 pb-8 h-fit my-10 desktop:mx-10 mobile:w-fit mobile:mx-4'>
+            <div className='w-full desktop:max-w-sm tablet:max-w-md tablet:mx-auto z-[2] bg-white shadow-2xl shadow-black rounded-xl px-8 pt-6 pb-8 h-fit my-10 desktop:mx-10 mobile:w-fit mobile:mx-4'>
                 <div className="mb-4">
                     <h1 className="block text-gray-700 text-lg font-bold mb-2 text-center">
                         BIENVENIDO
@@ -221,7 +221,7 @@ export const Hero = () => {
             </div>
 
             {/* FORM */}
-            <div className='w-full desktop:max-w-lg desktop:min-w-[32rem] z-[2] bg-white shadow-2xl shadow-black rounded-xl px-8 pt-6 pb-8 h-fit my-10 mobile:w-fit mobile:mx-4'>
+            <div className='w-full desktop:max-w-lg desktop:min-w-[32rem] tablet:mx-auto  z-[2] bg-white shadow-2xl shadow-black rounded-xl px-8 pt-6 pb-8 h-fit my-10 mobile:w-fit mobile:mx-4'>
                 <form className="" autoComplete="off" id='Form'>
                     <div className="mb-4 text-center">
                         <label className="block text-gray-700 text-lg font-bold mb-2">
@@ -300,7 +300,7 @@ export const Hero = () => {
 
 
             {/* ÚLTIMO PASO */}
-            <div className='w-full desktop:max-w-sm z-[2] bg-white shadow-2xl shadow-black rounded-xl px-8 pt-6 pb-8 h-fit my-10 desktop:mx-10 mobile:w-fit mobile:mx-4'>
+            <div className='w-full desktop:max-w-sm tablet:max-w-md tablet:mx-auto  z-[2] bg-white shadow-2xl shadow-black rounded-xl px-8 pt-6 pb-8 h-fit my-10 desktop:mx-10 mobile:w-fit mobile:mx-4'>
                 <div className="mb-4">
                     <label className="block text-gray-700 text-lg font-bold mb-2 text-center">
                         ÚLTIMO PASO
@@ -310,7 +310,7 @@ export const Hero = () => {
                     <p className="block text-gray-700 text-lg font-normal mb-2 text-center">
                         ¡Envía la solicitud descargada a nuestro correo <a className=' text-teal-600' href = "mailto: club@atletismeatlas.es">club@atletismeatlas.es</a>!
                     </p>
-                    <img alt='/' src="/DocumentoDescargado.png" className=' shadow-lg'/>
+                    <img alt='/' src="/DocumentoDescargado.png" className='mx-auto shadow-lg'/>
                 </div>
                 <br />
                     <hr className=' border-2 border-color-atlas-300 mx-10' />
@@ -319,7 +319,7 @@ export const Hero = () => {
                     <p className="block text-gray-700 text-lg font-normal mb-2 text-center">
                         No te olvides de adjuntar el <b>comprobante bancario</b> de la cuota correspondiente en el mensaje.
                     </p>
-                    <img alt='/' src="/Attach.png" className=' shadow-lg'/>
+                    <img alt='/' src="/Attach.png" className=' mx-auto shadow-lg'/>
                 </div>
             </div>
 
