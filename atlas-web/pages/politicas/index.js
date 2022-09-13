@@ -24,6 +24,7 @@ export default function Home() {
         <meta property="twitter:image" content="https://atletismeatlas.es/Link%20Preview/Twitter_Preview.png"/>
       </Head>
       <Politicas/>
+      
     </div>
     
   )
