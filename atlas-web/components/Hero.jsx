@@ -210,7 +210,7 @@ export const Hero = () => {
                     <br />
                     <p className="block text-gray-700 text-lg font-normal text-center">
                         Completa el siguiente formulario con los datos personales requeridos.<br/><br/>
-                        Una vez completado, podrás descargar la documentación correspondiente y finalizar el proceso de solicitud del puesto de <b>Socio No Atleta</b> <b>del Club Atletisme Atlas</b>.
+                        Una vez completado, podrás descargar la documentación correspondiente y finalizar el proceso de solicitud del puesto de <b>Socio No Atleta</b> del <b>Club Atletisme Atlas</b>.
                     </p>
                     <br />
                     <hr className=' border-2 border-color-atlas-300 mx-10' />
@@ -241,9 +241,9 @@ export const Hero = () => {
                     </div>
                     <div className="mb-4">
                         <label className="block text-gray-700 text-sm font-bold mb-2">
-                            Provincia
+                            Dirección
                         </label>
-                        <input className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username" type="text" placeholder="Islas Baleares"/>
+                        <input className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username" type="text" placeholder="Calle, Número y Código postal"/>
                     </div>
                     <div className="mb-4">
                         <label className="block text-gray-700 text-sm font-bold mb-2">
@@ -253,9 +253,9 @@ export const Hero = () => {
                     </div>
                     <div className="mb-4">
                         <label className="block text-gray-700 text-sm font-bold mb-2">
-                            Dirección
+                            Provincia
                         </label>
-                        <input className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username" type="text" placeholder="Calle, Número y Código postal"/>
+                        <input className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username" type="text" placeholder="Islas Baleares"/>
                     </div>
                     <div className="mb-4">
                         <label className="block text-gray-700 text-sm font-bold mb-2">
