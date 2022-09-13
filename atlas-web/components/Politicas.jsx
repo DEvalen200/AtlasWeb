@@ -35,7 +35,7 @@ export const Politicas = () => {
             {/* LOGO */}
             <div className='w-full desktop:max-w-sm z-[2] bg-white shadow-2xl shadow-black rounded-xl px-8 pt-6 pb-8 h-fit my-10 desktop:mx-5 mobile:w-fit mobile:mx-4'>
                 <div className="mb-4">
-                    <img src="/Logo_Oficial.png"/>
+                    <img alt='/' src="/Logo_Oficial.png"/>
                 </div>
             </div>
 

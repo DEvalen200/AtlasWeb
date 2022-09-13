@@ -216,7 +216,7 @@ export const Hero = () => {
                     <br />
                     <hr className=' border-2 border-color-atlas-300 mx-10' />
                     <br /> <br />
-                    <img src="/Logo_Oficial.png"/>
+                    <img alt='/' src="/Logo_Oficial.png"/>
                 </div>
             </div>
 
@@ -310,7 +310,7 @@ export const Hero = () => {
                     <p className="block text-gray-700 text-lg font-normal mb-2 text-center">
                         ¡Envía la solicitud descargada a nuestro correo <a className=' text-teal-600' href = "mailto: club@atletismeatlas.es">club@atletismeatlas.es</a>!
                     </p>
-                    <img src="/DocumentoDescargado.png" className=' shadow-lg'/>
+                    <img alt='/' src="/DocumentoDescargado.png" className=' shadow-lg'/>
                 </div>
                 <br />
                     <hr className=' border-2 border-color-atlas-300 mx-10' />
@@ -319,7 +319,7 @@ export const Hero = () => {
                     <p className="block text-gray-700 text-lg font-normal mb-2 text-center">
                         No te olvides de adjuntar el <b>comprobante bancario</b> de la cuota correspondiente en el mensaje.
                     </p>
-                    <img src="/Attach.png" className=' shadow-lg'/>
+                    <img alt='/' src="/Attach.png" className=' shadow-lg'/>
                 </div>
             </div>
 
