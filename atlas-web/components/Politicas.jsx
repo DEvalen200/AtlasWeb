@@ -17,7 +17,7 @@ export const Politicas = () => {
 
     return(
     <div className='content-center justify-center flex min-h-screen h-fit bg-fixed bg-center bg-cover custom-img'>
-        <section className='sociosMediaQuery'>
+        <section className='mobile:block tablet:block desktop:flex'>
             {/* PROTECCION DE DATOS */}
             <div className='w-full desktop:max-w-2xl z-[2] bg-white shadow-2xl shadow-black rounded-xl px-8 pt-6 pb-8 h-fit my-10 desktop:mx-10 mobile:w-fit mobile:mx-4'>
                 <div className="mb-4">
@@ -26,7 +26,7 @@ export const Politicas = () => {
                     </h1>
                 </div>
                 <div className="mb-4">
-                    <p id='proteccionDatos' className="block text-gray-700 text-lg font-normal text-justify">
+                    <p id='proteccionDatos' className="block text-gray-700 desktop:text-base mobile:text-sm font-normal text-justify ">
                         
                     </p>
                 </div>
@@ -47,7 +47,7 @@ export const Politicas = () => {
                     </h1>
                 </div>
                 <div className="mb-4">
-                    <p id='derechoImagen' className="block text-gray-700 text-lg font-normal text-justify">
+                    <p id='derechoImagen' className="block text-gray-700  desktop:text-base mobile:text-sm font-normal text-justify">
                         
                     </p>
                 </div>
