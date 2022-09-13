@@ -18,7 +18,7 @@ export default function Home() {
         <meta property="og:url" content="https://atletismeatlas.es"/>
         <meta property="og:title" content="CA Atlas &#127760;"/>
         <meta property="og:description" content="Punto de partida para unos nuevos ilímites."/>
-        <meta property="og:image" content="/Link Preview/OG_Preview.png"/>
+        <meta property="og:image" content="https://atletismeatlas.es/Link Preview/OG_Preview.png"/>
         <meta property="og:site_name" content="CA Atlas &#127760;"/>
         {/*<!-- Twitter -->*/}
         <meta property="twitter:card" content="summary_large_image"/>
