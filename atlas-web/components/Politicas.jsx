@@ -3,7 +3,7 @@ import { useEffect } from 'react'
 export const Politicas = () => {
 
     useEffect(() => {
-
+        console.log(window.location.href);
         fetch('proteccionDatos.html')
         .then(response=> response.text())
         .then(text=> document.getElementById('proteccionDatos').innerHTML = text)
