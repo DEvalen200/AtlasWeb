@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Hero from '../components/Hero'
 import Script from 'next/script'
+import Link from 'next/link'
 
 export default function Home() {
   return (
@@ -24,6 +25,8 @@ export default function Home() {
         <meta property="twitter:image" content="https://atletismeatlas.es/Link%20Preview/Twitter_Preview.png"/>
 
       </Head>
+      <Link href="/politicas"><a></a></Link>
+      <Link href="/solicitud-socio"><a></a></Link>
       <Script src='/customRedirect.js' />
     </div>
   )
