@@ -184,7 +184,7 @@ export const Hero = () => {
 
 
   return (
-    <div className=' content-center justify-center flex h-fit bg-fixed bg-center bg-cover custom-img'>
+    <div className=' content-center justify-center flex min-h-screen h-fit bg-fixed bg-center bg-cover custom-img'>
         {/* Overlay */}
         {/*<div className='fixed top-0 left-0 right-0 bottom-0 bg-black/70 z-[2]'/>*/}
         
