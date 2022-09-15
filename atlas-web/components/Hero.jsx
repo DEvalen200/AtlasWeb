@@ -282,7 +282,7 @@ export const Hero = () => {
                         <div className='max-w-[446px] mx-auto' id="signaturePadDiv">
                             <canvas className='border shadow rounded  w-full' id="signaturePadCanvas">
                             </canvas>
-                            <button className=" mb-4 bg-rose-500 hover:bg-rose-700 text-black py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button"
+                            <button className=" mb-4 mt-2 bg-rose-500 hover:bg-rose-700 text-black py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button"
                             onClick={clearSignaturePad}>
                                     Borrar
                             </button>
