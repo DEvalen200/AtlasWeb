@@ -1,8 +1,26 @@
 import Head from 'next/head'
 import Politicas from '../../components/Politicas'
+import fs from 'fs'
+import path from 'path';
+
+export async function getStaticProps() {
+  var proteccionDatos = "NULL";
+  var derechoImagen = "NULL";
+
+  const dev = process.env.NODE_ENV !== 'production';
+  const server = dev ? 'http://localhost:9000' : 'https://atletismeatlas.es';
+  
+  proteccionDatos = await (await (await fetch(path.join(server, 'proteccionDatos.html' ))).text());
+  derechoImagen = await (await (await fetch(path.join(server, 'derechoImagen.html' ))).text());
+
+  return {
+    props: {  proteccionDatos, derechoImagen },
+  };
+
+}
 
 
-export default function Home() {
+export default function Home({ proteccionDatos, derechoImagen }) {
   return (
     <div>
       <Head>
@@ -23,7 +41,7 @@ export default function Home() {
         <meta property="twitter:card" content="summary_large_image"/>
         <meta property="twitter:image" content="https://atletismeatlas.es/Link%20Preview/Twitter_Preview.png"/>
       </Head>
-      <Politicas/>
+      <Politicas proteccionDatos={proteccionDatos} derechoImagen={derechoImagen}/>
     </div>
     
   )

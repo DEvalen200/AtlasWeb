@@ -1,17 +1,20 @@
-import React, { cloneElement } from 'react'
-import { useEffect } from 'react'
-export const Politicas = () => {
+import {React, useEffect}  from 'react'
 
+function stringToHTML (str) {
+	var dom = document.createElement('div');
+	dom.innerHTML = str;
+	return dom;
+};
+
+
+
+export const Politicas = ({proteccionDatos, derechoImagen}) => {
+
+
+    
     useEffect(() => {
-        console.log(window.location.href);
-        fetch('proteccionDatos.html')
-        .then(response=> response.text())
-        .then(text=> document.getElementById('proteccionDatos').innerHTML = text)
-
-        fetch('derechoImagen.html')
-        .then(response=> response.text())
-        .then(text=> document.getElementById('derechoImagen').innerHTML = text)
-
+        document.getElementById('proteccionDatos').innerHTML = proteccionDatos;
+        document.getElementById('derechoImagen').innerHTML = derechoImagen;
 
     }, []);
 
@@ -27,7 +30,6 @@ export const Politicas = () => {
                 </div>
                 <div className="mb-4">
                     <p id='proteccionDatos' className="block text-gray-700 desktop:text-base mobile:text-sm font-normal text-justify ">
-                        
                     </p>
                 </div>
             </div>
@@ -48,7 +50,6 @@ export const Politicas = () => {
                 </div>
                 <div className="mb-4">
                     <p id='derechoImagen' className="block text-gray-700  desktop:text-base mobile:text-sm font-normal text-justify">
-                        
                     </p>
                 </div>
             </div>
@@ -60,4 +61,4 @@ export const Politicas = () => {
 
 }
 
-export default Politicas
+export default Politicas;
