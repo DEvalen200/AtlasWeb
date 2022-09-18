@@ -1,7 +1,8 @@
 import Head from 'next/head'
 import Politicas from '../../components/Politicas'
-import fs from 'fs'
+/*import fs from 'fs'
 import path from 'path';
+
 
 export async function getStaticProps() {
   var proteccionDatos = "NULL";
@@ -18,16 +19,17 @@ export async function getStaticProps() {
   };
 
 }
+*/
 
-
-export default function Home({ proteccionDatos, derechoImagen }) {
+export default function Home(/*{ proteccionDatos, derechoImagen }*/) {
   return (
     <div>
       <Head>
         <title>CA Atlas &#127760; | Políticas</title>
         <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui" />
         <meta name="description" content="Políticas del Club Atletisme Atlas &#127760;" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+        {/*<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>*/}
         <link rel="icon" href="/favicon/favicon.ico" />
 
         {/*<!-- Open Graph / Facebook -->*/}
@@ -41,7 +43,7 @@ export default function Home({ proteccionDatos, derechoImagen }) {
         <meta property="twitter:card" content="summary_large_image"/>
         <meta property="twitter:image" content="https://atletismeatlas.es/Link%20Preview/Twitter_Preview.png"/>
       </Head>
-      <Politicas proteccionDatos={proteccionDatos} derechoImagen={derechoImagen}/>
+      <Politicas /*proteccionDatos={proteccionDatos} derechoImagen={derechoImagen}*//>
     </div>
     
   )

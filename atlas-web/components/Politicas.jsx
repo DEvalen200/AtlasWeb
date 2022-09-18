@@ -1,22 +1,14 @@
-import {React, useEffect}  from 'react'
+import {React}  from 'react'
+import DerechoImagen from './DerechoImagen';
+import ProteccionDatos from './ProteccionDatos';
 
-function stringToHTML (str) {
-	var dom = document.createElement('div');
-	dom.innerHTML = str;
-	return dom;
-};
-
-
-
-export const Politicas = ({proteccionDatos, derechoImagen}) => {
+export const Politicas = () => {
 
 
     
-    useEffect(() => {
-        document.getElementById('proteccionDatos').innerHTML = proteccionDatos;
-        document.getElementById('derechoImagen').innerHTML = derechoImagen;
+    /*useEffect(() => {
 
-    }, []);
+    }, []);*/
 
     return(
     <div className='content-center justify-center flex min-h-screen h-fit bg-fixed bg-center bg-cover custom-img'>
@@ -29,8 +21,9 @@ export const Politicas = ({proteccionDatos, derechoImagen}) => {
                     </h1>
                 </div>
                 <div className="mb-4">
-                    <p id='proteccionDatos' className="block text-gray-700 desktop:text-base mobile:text-sm font-normal text-justify ">
-                    </p>
+                    <div id='proteccionDatos' className="block text-gray-700 desktop:text-base mobile:text-sm font-normal text-justify ">
+                    <ProteccionDatos/>
+                    </div>
                 </div>
             </div>
 
@@ -49,8 +42,9 @@ export const Politicas = ({proteccionDatos, derechoImagen}) => {
                     </h1>
                 </div>
                 <div className="mb-4">
-                    <p id='derechoImagen' className="block text-gray-700  desktop:text-base mobile:text-sm font-normal text-justify">
-                    </p>
+                    <div id='derechoImagen' className="block text-gray-700  desktop:text-base mobile:text-sm font-normal text-justify">
+                        <DerechoImagen/>
+                    </div>
                 </div>
             </div>
 
