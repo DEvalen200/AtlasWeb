@@ -10,6 +10,8 @@
   },
   "dependencies": {
     "@pdf-lib/fontkit": "^1.1.1",
+    "@react-three/drei": "^9.31.1",
+    "@react-three/fiber": "^8.7.4",
     "@types/react": "^18.0.19",
     "axios": "^0.27.2",
     "babel-plugin-static-fs": "^3.0.0",
@@ -22,7 +24,8 @@
     "pdf-lib": "^1.17.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "signature_pad": "^4.0.7"
+    "signature_pad": "^4.0.7",
+    "three": "^0.144.0"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.8",
