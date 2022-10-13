@@ -119,7 +119,7 @@ z-index: 10;
 .mainBackground{
   background-repeat: no-repeat,  repeat ;
   background-position: center top;
-  background-image: url("/img/Background_XL_2_Transparent.png"), url("/img/Littleknobs_Texture.png");
+  background-image: url("/img/Background_XL_2_Transparent.png"), url("/img/LittleKnobs_Texture.png");
   background-blend-mode: multiply;
 }
 
