@@ -7,15 +7,19 @@ module.exports = {
   theme: {
     extend: {},
     screens: {
-      'mobile': '0px',
+      mobile: "0",
+
+      tablet: "426px",
       // => @media (min-width: 100px) { ... }
 
-      'tablet': '600px',
+      laptop: "769px",
       // => @media (min-width: 800px) { ... }
 
-      'desktop': '1200px',
+      desktop: "1025px",
+
+      desktop4k: "1441px",
       // => @media (min-width: 1280px) { ... }
     },
   },
   plugins: [],
-}
+};

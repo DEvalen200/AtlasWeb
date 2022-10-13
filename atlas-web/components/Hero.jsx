@@ -188,7 +188,7 @@ export const Hero = () => {
         {/* Overlay */}
         {/*<div className='fixed top-0 left-0 right-0 bottom-0 bg-black/70 z-[2]'/>*/}
         
-        <section className=' mobile:block desktop:flex'>
+        <section className=' mobile:block desktop:flex offsetForScrollbarWidth'>
             {/* BIENVENIDO */}
             <div className='w-full desktop:max-w-sm tablet:max-w-md tablet:mx-auto z-[2] bg-white shadow-2xl shadow-black rounded-xl px-8 pt-6 pb-8 h-fit my-10 desktop:mx-10 mobile:w-fit mobile:mx-4'>
                 <div className="mb-4">
@@ -216,7 +216,7 @@ export const Hero = () => {
                     <br />
                     <hr className=' border-2 border-color-atlas-300 mx-10' />
                     <br /> <br />
-                    <img alt='/' src="/Logo_Oficial.png"/>
+                    <img alt='/' src="/img/Logo_Oficial.png"/>
                 </div>
             </div>
 
