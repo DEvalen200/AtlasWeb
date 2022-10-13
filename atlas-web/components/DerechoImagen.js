@@ -48,7 +48,7 @@ export default function DerechoImagen() {
         </b>
       </h1>
       <br />
-      Se advierte expresamente a la comunidad deportiva que está prohibido:
+      Se advierte expresamente a la comunidad deportiva que está prohibido:{" "}
       <br />
       <br />
       1. La grabación de la imagen y/o voz, por parte de los padres, tutores

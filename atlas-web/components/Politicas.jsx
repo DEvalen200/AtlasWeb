@@ -22,7 +22,7 @@ export const Politicas = () => {
                 </div>
                 <div className="mb-4">
                     <div id='proteccionDatos' className="block text-gray-700 desktop:text-base mobile:text-sm font-normal text-justify ">
-                    <ProteccionDatos/>
+
                     </div>
                 </div>
             </div>
@@ -43,7 +43,7 @@ export const Politicas = () => {
                 </div>
                 <div className="mb-4">
                     <div id='derechoImagen' className="block text-gray-700  desktop:text-base mobile:text-sm font-normal text-justify">
-                        <DerechoImagen/>
+  
                     </div>
                 </div>
             </div>
