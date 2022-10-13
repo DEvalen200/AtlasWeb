@@ -140,24 +140,23 @@ const Main = () => {
 
     {/* ¿Quiénes somos? */}
     <div className='max-w-[2560px] m-auto offsetForScrollbarWidth' id='QuienesAnchor'>
-      <div className='h-screen pt-24 w-full flex flex-col'>
-        <div className='text-center w-fit mx-auto px-4 mb-8 text-[50px] dalek text-teal-900 rounded-full glass noselect'>¿Quiénes somos?</div>
+      <div className='h-screen pt-24 w-full flex relative text-white'>
+        <div className='text-center h-fit mx-auto px-4 mb-8 text-[50px] dalek text-teal-900 rounded-full glass noselect'>¿Quiénes somos?</div>
+
         
-        <div className='absolute h-screen w-screen'>
-        <img src="/img/Placeholder1920.png" alt="/" className='absolute w-[1000px] left-1/2 top-1/2 mt-[-300px] ml-[-505px] '/>
+        <div className='absolute h-[70%] w-[60%] bg-black top-[200px] left-1/2 -translate-x-1/2'>
+        <img src="/img/QuienesSomos/1.JPG" alt="/" className='m-auto h-full'/>
+        
         </div>
 
-        <div className='flex text-center h-full mb-10 '>
-          <div className='darkglass mx-10 h-[40%] flex-1 rounded-3xl text-justify'>
-            <p className='p-8'></p>
+        <div className='absolute left-10 mt-10 darkglass h-[40%] max-w-[400px] flex-1 rounded-3xl text-justify'>
+            <p className='p-8'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt fugiat asperiores id excepturi incidunt veniam nulla cupiditate earum dolore! Dignissimos consequuntur deleniti tempore voluptates facilis necessitatibus possimus qui, eius nisi aspernatur animi vitae dolore, atque corrupti magni mollitia in a aliquid maxime quaerat. Dignissimos ullam beatae quia ut impedit exercitationem distinctio, odio architecto dolorem corrupti tempore voluptatem provident recusandae cum expedita, minima ex alias vero et eum nemo incidunt voluptate.</p>
           </div>
-          <div className=' self-center flex-1 min-w-[720px] '>
 
+          <div className='absolute right-10 bottom-10 darkglass h-[40%] max-w-[400px] flex-1 rounded-3xl text-justify '>
+            <p className='p-8'> Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt exercitationem natus porro ipsam soluta ullam praesentium autem quos laborum consequatur illum minus magnam veniam inventore voluptatibus, deleniti, est, animi nulla? Ea reprehenderit officia modi eaque corporis maiores rem asperiores earum ullam omnis quisquam eum, nemo aperiam nostrum unde aliquid fuga repellendus, explicabo molestias incidunt voluptatum voluptate autem architecto est! Maxime quisquam a labore animi deserunt tenetur dolorem nesciunt velit quae!</p>
           </div>
-          <div className='darkglass mx-10 h-[40%] flex-1 rounded-3xl self-end'>
-            <p className='p-8'></p>
-          </div>
-        </div>
+
       </div>
     </div>
 
