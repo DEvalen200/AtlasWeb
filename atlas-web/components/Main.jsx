@@ -121,8 +121,8 @@ const Main = () => {
               </div>
 
               <div className='absolute top-[10%] right-12'>
-                <a href="https://www.instagram.com/atletismeatlas/" target={"_blank"} rel={"noopener"} className='btn drop-shadow-xl'> <div className='icon'><FontAwesomeIcon icon={faInstagram} className='fa-3x'/></div></a>
-                <a href="https://facebook.com/AtletismeAtlas" target={"_blank"} rel={"noopener"} className='btn twitter drop-shadow-xl'><div className='icon'><FontAwesomeIcon icon={faFacebook} className='fa-3x'/></div></a>
+                <a href="https://www.instagram.com/atletismeatlas/" target={"_blank"} rel={"noreferrer noopener"} className='btn drop-shadow-xl'> <div className='icon'><FontAwesomeIcon icon={faInstagram} className='fa-3x'/></div></a>
+                <a href="https://facebook.com/AtletismeAtlas" target={"_blank"} rel={"noreferrer noopener"} className='btn twitter drop-shadow-xl'><div className='icon'><FontAwesomeIcon icon={faFacebook} className='fa-3x'/></div></a>
                 <a className='btn drop-shadow-xl'><div className='icon'><FontAwesomeIcon icon={faTiktok} className='fa-2x'/></div></a>
               </div>
 

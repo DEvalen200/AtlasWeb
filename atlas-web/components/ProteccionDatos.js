@@ -36,7 +36,7 @@ export default function ProteccionDatos() {
       Datos de contacto: Calle Cadernera, 27 A, Marratxí, Islas Baleares.
       <br />
       <br />
-      Datos de contacto del delegado de protección de datos:{" "}
+      Datos de contacto del delegado de protección de datos:
       <a className="color-atlas-300" href="mailto: club@atletismeatlas.es">
         club@atletismeatlas.es
       </a>
