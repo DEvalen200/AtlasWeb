@@ -116,7 +116,7 @@ const Main = () => {
 
               <div className='customBlendParent absolute top-[70%] left-[32%] whitespace-nowrap '>
                   <div className='customBlend px-4 py-1 '> 
-                    <span className='laptop:text-2xl desktop:text-3xl noselect'>"Punto de partida para unos nuevos ilímites"</span>
+                    <span className='laptop:text-2xl desktop:text-3xl noselect'>&quot;Punto de partida para unos nuevos ilímites&quot;</span>
                   </div>
               </div>
 
