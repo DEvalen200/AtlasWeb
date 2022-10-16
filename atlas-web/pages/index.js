@@ -51,8 +51,8 @@ export default function Home() {
         <a></a>
       </Link>*/}
 
-      <Main />
-      {/*<UnderConstruction />*/}
+      {/*<Main />*/}
+      <UnderConstruction />
 
       {/* <Script src='/customRedirect.js' /> */}
     </div>
