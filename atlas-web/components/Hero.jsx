@@ -251,9 +251,9 @@ export const Hero = () => {
 
             {/* Información Transferencia */}
             <section id='TransactionInfo' className='fixed items-center w-full h-full bg-black/50 z-[4] hidden'>
-            <div className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-screen mobile:text-lg tablet:text-base'>
+            <div className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-screen mobile:text-base tablet:text-base'>
                 
-                <div className='w-fit max-w-[44rem] bg-white shadow-2xl shadow-black rounded-xl text-center mobile:m-0 tablet:m-auto py-3'>
+                <div className='w-fit max-w-[44rem] bg-white shadow-2xl shadow-black rounded-xl text-center mobile:m-2 mobile:px-2 tablet:m-auto py-3'>
                     <div className=' w-fit bg-teal-500 shadow-2xl rounded-xl text-center mx-auto -translate-y-8'>
                         <div className='text-black tablet:text-2xl font-bold py-2 px-6 '>INFORMACIÓN TRANSFERENCIA</div>
                     </div>
