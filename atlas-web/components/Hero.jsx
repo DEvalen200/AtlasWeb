@@ -407,7 +407,7 @@ export const Hero = () => {
                             <option>6/8</option>
                             <option>8/10</option>
                             <option>12/14</option>
-                            <option>S</option>
+                            <option selected="selected">S</option>
                             <option>M</option>
                             <option>L</option>
                             <option>XL</option>
