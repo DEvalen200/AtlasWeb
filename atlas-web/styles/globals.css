@@ -533,3 +533,35 @@ img {
   backdrop-filter: blur(3px);
   -webkit-backdrop-filter: blur(3px);
 }
+
+.sociobtn{
+  transition: all 0.3s ease-in-out;
+}
+
+.sociobtn:hover{
+  background-color: #00acac;
+}
+
+.customDropShadow{
+  filter: drop-shadow(5px 5px 0px #004949);
+}
+
+.customDropShadow2{
+  filter: drop-shadow(5px 5px 5px hsla(182, 100%, 19%, 0.322));
+}
+
+.transferenciaButton{
+  transition: all 0.3s ease-in-out;
+}
+
+.transferenciaButton:hover{
+  background-color: rgb(0, 160, 160);
+}
+
+.continuarButton{
+  transition: all 0.3s ease-in-out;
+}
+
+.continuarButton:hover{
+ background-color: rgb(0, 173, 0);
+}

@@ -24,7 +24,9 @@ function clearSignaturePad()
 
 async function validateForm()
 {
+
     var emptyvalue = false;
+
     for (let index = 0; index < document.forms[0].elements.length; index++) {
         if (!document.forms[0][index].value)
         {
@@ -115,13 +117,16 @@ async function validateForm()
         signaturePad.toDataURL())
 
         var screenshot = await captureText(params);
+
         //console.log("screenshot: " + screenshot);
         //FileSaver(screenshot.toDataURL(),"Canvas idk");
         //var newTab = window.open('about:blank','image from canvas');
         //newTab.document.write("<img src='" + signbytes + "' alt='from canvas'/>");
         //FileSaver.saveAs(signaturePad.toDataURL("image/png"), "firma.png");
         var screenshotURL = screenshot.toDataURL();
-    modifyPdf(screenshotURL, params);
+
+        modifyPdf(screenshotURL, params);
+
 }
 
 function resizeCanvas() {
@@ -135,7 +140,7 @@ function resizeCanvas() {
 async function captureText(formParams)
 {
     //console.log("Capturando");
-    
+
     const date = new Date();
 
     const monthNames = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio",
@@ -156,6 +161,7 @@ async function captureText(formParams)
         //FileSaver(canvas.toDataURL(),"Canvas idk");
     })
     //console.log('_canvas: ' + _canvas);
+
     return _canvas;
 }
 
@@ -182,12 +188,114 @@ export const Hero = () => {
 
     }, []);
 
+    function showTransactionWarning()
+    {
+        if (document.getElementById("Transaction").classList.contains("hidden"))
+        {
+            document.getElementById("Transaction").classList.remove("hidden");
+        }
+    }
+
+    function hideTransactionWarning()
+    {
+        if (!document.getElementById("Transaction").classList.contains("hidden"))
+        {
+            document.getElementById("Transaction").classList.add("hidden");
+        }
+    }
+
+    
+    function showTransactionInfo()
+    {
+        if (document.getElementById("TransactionInfo").classList.contains("hidden"))
+        {
+            document.getElementById("TransactionInfo").classList.remove("hidden");
+        }
+    }
+
+    function hideTransactionInfo()
+    {
+        if (!document.getElementById("TransactionInfo").classList.contains("hidden"))
+        {
+            document.getElementById("TransactionInfo").classList.add("hidden");
+        }
+    }
 
   return (
     <div className=' content-center justify-center flex min-h-screen h-fit bg-fixed bg-center bg-cover custom-img'>
         {/* Overlay */}
         {/*<div className='fixed top-0 left-0 right-0 bottom-0 bg-black/70 z-[2]'/>*/}
         
+        {/* Alerta confirmación transferencia */}
+        <section id='Transaction' className='fixed items-center w-full h-full bg-black/50 z-[4] hidden'>
+            <div className='absolute offsetForScrollbarWidth m-auto top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2'>
+                
+                <div className='w-fit max-w-3xl bg-white shadow-2xl shadow-black rounded-xl mobile:text-justify desktop:text-center m-auto px-6 py-3'>
+                    <div className=' w-fit bg-red-500 shadow-2xl  rounded-xl text-center mx-auto -translate-y-8'>
+                        <div className='text-black text-2xl font-bold py-2 px-6 '>¡ATENCIÓN!</div>
+                    </div>
+                    <div className='mt-[-20px]'>
+                        <div className=''>Antes de continuar es necesario haber realizado la <b>transferencia de la cuota por solicitud de inscripción y membresía</b>.</div>
+                        <br/>
+                        <div className=''>Si ya has realizado la transferencia y dispones del comprobante pulsa <b className=' text-green-600'>"Continuar"</b>.</div>
+                        <br/>
+                        <div className='mb-4'>En caso contrario pulsa <b className=' text-teal-700'>"Ver información de transferencia"</b> y <b>completa el pago de la cuota por solicitud de inscripción y membresía</b>.</div>
+                    </div>
+                    <div className='desktop:flex mobile:text-center  justify-around mb-2'>
+                        <button onClick={function(event){hideTransactionWarning(); showTransactionInfo()}} className='mobile:mb-6 desktop:mb-0 transferenciaButton w-[269px] bg-teal-700 text-white px-4 py-4 rounded-full font-bold '>Ver información de transferencia</button>
+                        <button onClick={function(event){hideTransactionWarning(); validateForm();}} className='continuarButton w-[269px] bg-green-700 text-white px-4 py-4 rounded-full font-bold '>Continuar</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+            {/* Información Transferencia */}
+            <section id='TransactionInfo' className='fixed items-center w-full h-full bg-black/50 z-[4] hidden'>
+            <div className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-screen mobile:text-lg tablet:text-base'>
+                
+                <div className='w-fit max-w-[44rem] bg-white shadow-2xl shadow-black rounded-xl text-center mobile:m-0 tablet:m-auto py-3'>
+                    <div className=' w-fit bg-teal-500 shadow-2xl rounded-xl text-center mx-auto -translate-y-8'>
+                        <div className='text-black tablet:text-2xl font-bold py-2 px-6 '>INFORMACIÓN TRANSFERENCIA</div>
+                    </div>
+                    <div className='mt-[-20px]'>
+                        <div className=''>El importe a pagar para ser socio del Club Atletisme Atlas es de <b>30€</b>.</div>
+                        <br/>
+                        <div className='mb-2'>El pago debe realizarse al número de cuenta referido, con el concepto:</div>
+                        <table className='m-auto w-[85%] text-left table-fixed mb-4 tablet:table mobile:hidden'>
+                            <tbody>
+                                <tr>
+                                    <th>CAIXA COLONYA POLLENÇA</th>
+                                    <th>IBAN ES44 2056 0004 4420 9796 8925</th>
+                                </tr>
+                                <tr>
+                                    <td><b>CONCEPTO</b></td>
+                                    <td><b>NOMBRE APELLIDO1 APELLIDO2 SOCIO</b></td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <div className='tablet:hidden'>
+                            <div>
+                            <b>CAIXA COLONYA POLLENÇA</b>
+                            </div>
+                            <div className='mb-6'>
+                            <b>IBAN ES44 2056 0004 4420 9796 8925</b>
+                            </div>
+                            <div>
+                            <b>CONCEPTO</b>
+                            </div>
+                            <div className='mb-6'>
+                            <b>NOMBRE APELLIDO1 APELLIDO2 SOCIO</b>
+                            </div>
+                        </div>
+                    </div>
+                    <div className='desktop:flex mobile:text-center  justify-around mb-2'>
+                        <button onClick={hideTransactionInfo} className='transferenciaButton w-[269px] bg-teal-700 text-white px-4 py-4 rounded-full font-bold text-xl '>Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <section className=' mobile:block desktop:flex offsetForScrollbarWidth'>
             {/* BIENVENIDO */}
             <div className='w-full desktop:max-w-sm tablet:max-w-md tablet:mx-auto z-[2] bg-white shadow-2xl shadow-black rounded-xl px-8 pt-6 pb-8 h-fit my-10 desktop:mx-10 mobile:w-fit mobile:mx-4'>
@@ -196,7 +304,7 @@ export const Hero = () => {
                         BIENVENIDO
                     </h1>
                 </div>
-                <div className="mb-4">
+                <div className="mb-4 text-center">
                     <p className="block text-gray-700 text-lg font-normal text-center">
                         ¡Esta es la página de solicitud del puesto de <b>Socio No Atleta</b> del <b>Club Atletisme Atlas</b>!
                     </p>
@@ -206,6 +314,7 @@ export const Hero = () => {
                     <p className="block text-gray-700 text-lg font-normal text-center">
                         Te recordamos que antes de completar y enviar la solicitud debes haber pagado la <b>cuota correspondiente.</b>
                     </p>
+                    <button onClick={showTransactionInfo} className='my-3 mx-auto transferenciaButton bg-teal-700 text-white px-4 py-4 rounded-full font-bold '>Ver información de transferencia</button>
                     <br />
                     <hr className=' border-2 border-color-atlas-300 mx-10' />
                     <br />
@@ -290,7 +399,7 @@ export const Hero = () => {
                     </div>
                 <div className="flex items-center justify-between">
                     <button className="bg-teal-300 hover:bg-teal-700 text-black py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button"
-                        onClick={validateForm}>
+                        onClick={showTransactionWarning}>
                             Descargar Documento PDF
                     </button>
                 </div>
@@ -321,7 +430,7 @@ export const Hero = () => {
                 </div>
             </div>
 
-            {/* CAPTURA TEXTO PDF */}
+            {/* CAPTURA TEXTO PDF - NO BORRAR - USADO PARA GENERAR UN DIV INVISIBLE CON EL TEXTO A CAPTURAR PARA GENERAR PDF */}
             <div id='capture' className='texto-capturar' style={{display: 'none'}}>
             
             </div>

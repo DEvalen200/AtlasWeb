@@ -145,7 +145,7 @@ const Main = () => {
 
         
         <div className='absolute h-[70%] w-[60%] bg-black top-[200px] left-1/2 -translate-x-1/2'>
-        <img src="/img/QuienesSomos/1.JPG" alt="/" className='m-auto h-full'/>
+        <img src="/img/" alt="/" className='m-auto h-full'/>
         
         </div>
 
