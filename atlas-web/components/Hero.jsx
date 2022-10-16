@@ -314,7 +314,7 @@ export const Hero = () => {
                     <p className="block text-gray-700 text-lg font-normal text-center">
                         Te recordamos que antes de completar y enviar la solicitud debes haber pagado la <b>cuota correspondiente.</b>
                     </p>
-                    <button onClick={showTransactionInfo} className='my-3 mx-auto transferenciaButton bg-teal-700 text-white px-4 py-4 rounded-full font-bold '>Ver información de transferencia</button>
+                    <button onClick={showTransactionInfo} className='mt-3 mb-6 mx-auto transferenciaButton bg-teal-700 text-white px-4 py-4 rounded-full font-bold '>Ver información de transferencia</button>
                     <br />
                     <hr className=' border-2 border-color-atlas-300 mx-10' />
                     <br />
