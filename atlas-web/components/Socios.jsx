@@ -41,7 +41,7 @@ const Socios = () => {
                     <hr className=' border-2 border-color-atlas-300 mx-10 mb-6' />   
                 </div>
 
-                <div className='mx-10 text-center mb-6 text-base'><b>La información necesaria para la transferencia bancaria y la solicitud de inscripción de se encuentran en la siguiente página.*</b></div>
+                <div className='mx-10 text-center mb-6 text-base'><b>La información necesaria para la transferencia bancaria y la solicitud de inscripción se encuentran en la siguiente página.*</b></div>
                 
                 <div className='text-center'>
                 <Link href='/solicitud-socio'><a className='inline-block bg-[#008080] tablet:px-20 tablet:py-6 mobile:px-10 mobile:py-6  rounded-full sociobtn customDropShadow cursor-pointer text-white mobile:text-xl tablet:text-3xl font-bold noselect'>

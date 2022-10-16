@@ -22,6 +22,22 @@ function clearSignaturePad()
     hasSigned = false;
 }
 
+
+function submitFormToGoogleSheet()
+{
+    var form = document.getElementById('Form');
+    fetch(form.action, {
+        method : "POST",
+        body: new FormData(document.getElementById("Form")),
+    }).then(
+        response => response.json()
+    ).then((html) => {
+        // you can put any JS code here
+
+    });
+
+}
+
 async function validateForm()
 {
 
@@ -114,7 +130,8 @@ async function validateForm()
         document.forms[0][5].value,
         document.forms[0][6].value,
         document.getElementById("checkbox").checked,
-        signaturePad.toDataURL())
+        signaturePad.toDataURL(),
+        document.forms[0][7].value)
 
         var screenshot = await captureText(params);
 
@@ -127,6 +144,7 @@ async function validateForm()
 
         modifyPdf(screenshotURL, params);
 
+        submitFormToGoogleSheet()
 }
 
 function resizeCanvas() {
@@ -220,6 +238,7 @@ export const Hero = () => {
             document.getElementById("TransactionInfo").classList.add("hidden");
         }
     }
+
 
   return (
     <div className=' content-center justify-center flex min-h-screen h-fit bg-fixed bg-center bg-cover custom-img'>
@@ -331,7 +350,7 @@ export const Hero = () => {
 
             {/* FORM */}
             <div className='w-full desktop:max-w-lg desktop:min-w-[32rem] tablet:w-fit  z-[2] bg-white shadow-2xl shadow-black rounded-xl px-8 pt-6 pb-8 h-fit my-10 mobile:w-fit mobile:mx-4 tablet:mx-4'>
-                <form className="" autoComplete="off" id='Form'>
+                <form className="" action="https://sheetdb.io/api/v1/9x9zrsu1h0qho" method="POST" autoComplete="off" id='Form'>
                     <div className="mb-4 text-center">
                         <label className="block text-gray-700 text-lg font-bold mb-2">
                             FORMULARIO DE SOLICITUD DE SOCIO
@@ -341,43 +360,59 @@ export const Hero = () => {
                         <label className="block text-gray-700 text-sm font-bold mb-2" >
                             Nombre y apellidos
                         </label>
-                        <input className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username" type="text" placeholder="Nombre y apellidos"/>
+                        <input className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username" name='data[NOMBRE Y APELLIDOS]' type="text" placeholder="Nombre y apellidos"/>
                     </div>
                     <div className="mb-4">
                         <label className="block text-gray-700 text-sm font-bold mb-2">
                             DNI
                         </label>
-                        <input className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username" type="text" placeholder="DNI"/>
+                        <input className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="" name='data[DNI]'  type="text" placeholder="DNI"/>
                     </div>
                     <div className="mb-4">
                         <label className="block text-gray-700 text-sm font-bold mb-2">
                             Dirección
                         </label>
-                        <input className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username" type="text" placeholder="Calle, Número y Código postal"/>
+                        <input className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="" name='data[DIRECCIÓN]' type="text" placeholder="Calle, Número y Código postal"/>
                     </div>
                     <div className="mb-4">
                         <label className="block text-gray-700 text-sm font-bold mb-2">
                             Municipio
                         </label>
-                        <input className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username" type="text" placeholder="Palma"/>
+                        <input className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="" name='data[MUNICIPIO]' type="text" placeholder="Palma"/>
                     </div>
                     <div className="mb-4">
                         <label className="block text-gray-700 text-sm font-bold mb-2">
                             Provincia
                         </label>
-                        <input className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username" type="text" placeholder="Islas Baleares"/>
+                        <input className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="" name='data[PROVINCIA]' type="text" placeholder="Islas Baleares"/>
                     </div>
                     <div className="mb-4">
                         <label className="block text-gray-700 text-sm font-bold mb-2">
                             Teléfono de contacto
                         </label>
-                        <input className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username" type="number" placeholder="Teléfono de contacto"/>
+                        <input className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="" name='data[TELÉFONO]' type="number" placeholder="Teléfono de contacto"/>
                     </div>
                     <div className="mb-4">
                         <label className="block text-gray-700 text-sm font-bold mb-2">
                             Correo electrónico
                         </label>
-                        <input className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username" type="text" placeholder="Correo electrónico"/>
+                        <input className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="" name='data[CORREO]' type="text" placeholder="Correo electrónico"/>
+                    </div>
+                    <div className="mb-4">
+                        <label className="block text-gray-700 text-sm font-bold mb-2">
+                            Talla camiseta
+                        </label>
+                        <select class="block  w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline"  name='data[TALLA]' form="Form">
+                            <option>2/3</option>
+                            <option>6/8</option>
+                            <option>8/10</option>
+                            <option>12/14</option>
+                            <option>S</option>
+                            <option>M</option>
+                            <option>L</option>
+                            <option>XL</option>
+                            <option>XXL</option>
+                        </select>
                     </div>
                 </form>
                 <div className="flex items-center mb-4">
