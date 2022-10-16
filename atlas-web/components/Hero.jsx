@@ -405,7 +405,6 @@ export const Hero = () => {
                         <select class="block  w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline"  name='data[TALLA]' form="Form">
                             <option>2/3</option>
                             <option>4/6</option>
-                            <option>6/8</option>
                             <option>8/10</option>
                             <option>12/14</option>
                             <option selected="selected">S</option>
@@ -413,6 +412,7 @@ export const Hero = () => {
                             <option>L</option>
                             <option>XL</option>
                             <option>XXL</option>
+                            <option>XXXL</option>
                         </select>
                     </div>
                 </form>
