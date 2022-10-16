@@ -237,9 +237,9 @@ export const Hero = () => {
                     <div className='mt-[-20px]'>
                         <div className=''>Antes de continuar es necesario haber realizado la <b>transferencia de la cuota por solicitud de inscripción y membresía</b>.</div>
                         <br/>
-                        <div className=''>Si ya has realizado la transferencia y dispones del comprobante pulsa <b className=' text-green-600'>"Continuar"</b>.</div>
+                        <div className=''>Si ya has realizado la transferencia y dispones del comprobante pulsa <b className=' text-green-600'>&quot;Continuar&quot;</b>.</div>
                         <br/>
-                        <div className='mb-4'>En caso contrario pulsa <b className=' text-teal-700'>"Ver información de transferencia"</b> y <b>completa el pago de la cuota por solicitud de inscripción y membresía</b>.</div>
+                        <div className='mb-4'>En caso contrario pulsa <b className=' text-teal-700'>&quot;Ver información de transferencia&quot;</b> y <b>completa el pago de la cuota por solicitud de inscripción y membresía</b>.</div>
                     </div>
                     <div className='desktop:flex mobile:text-center  justify-around mb-2'>
                         <button onClick={function(event){hideTransactionWarning(); showTransactionInfo()}} className='mobile:mb-6 desktop:mb-0 transferenciaButton w-[269px] bg-teal-700 text-white px-4 py-4 rounded-full font-bold '>Ver información de transferencia</button>
