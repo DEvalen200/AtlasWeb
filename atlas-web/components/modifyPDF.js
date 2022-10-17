@@ -6,9 +6,9 @@ export class formParameters {
   constructor(
     Nombre,
     DNI,
-    Provincia,
-    Municipio,
     Direccion,
+    Municipio,
+    Provincia,
     Telefono,
     Correo,
     Acepta,
@@ -17,9 +17,9 @@ export class formParameters {
   ) {
     this.Nombre = Nombre;
     this.DNI = DNI;
-    this.Provincia = Provincia;
-    this.Municipio = Municipio;
     this.Direccion = Direccion;
+    this.Municipio = Municipio;
+    this.Provincia = Provincia;
     this.Telefono = Telefono;
     this.Correo = Correo;
     this.Acepta = Acepta;
