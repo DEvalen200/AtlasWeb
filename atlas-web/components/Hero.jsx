@@ -164,7 +164,7 @@ async function captureText(formParams)
     const monthNames = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio",
     "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
 
-    const dayNames = ["Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado", "Domingo"]; 
+    const dayNames = [ "Domingo", "Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado"]; 
 
     var _canvas;
 
@@ -467,7 +467,7 @@ export const Hero = () => {
             </div>
 
             {/* CAPTURA TEXTO PDF - NO BORRAR - USADO PARA GENERAR UN DIV INVISIBLE CON EL TEXTO A CAPTURAR PARA GENERAR PDF */}
-            <div id='capture' className='texto-capturar' style={{display: 'none'}}>
+            <div id='capture' className='texto-capturar absolute' style={{display: 'none'}}>
             
             </div>
         </section>
