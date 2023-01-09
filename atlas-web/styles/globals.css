@@ -521,7 +521,7 @@ img {
 }
 
 .glass{
-  background: rgba(214, 239, 255, 0.2);
+  background: rgba(60, 255, 255, 0.2);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(3px);
   -webkit-backdrop-filter: blur(3px);
@@ -578,4 +578,67 @@ select {
   background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAh0lEQVQ4T93TMQrCUAzG8V9x8QziiYSuXdzFC7h4AcELOPQAdXYovZCHEATlgQV5GFTe1ozJlz/kS1IpjKqw3wQBVyy++JI0y1GTe7DCBbMAckeNIQKk/BanALBB+16LtnDELoMcsM/BESDlz2heDR3WePwKSLo5eoxz3z6NNcFD+vu3ij14Aqz/DxGbKB7CAAAAAElFTkSuQmCC');
   background-repeat: no-repeat;
   background-position: 98% center;
+}
+
+.selectedCircle{
+  color:rgb(0, 128, 128);
+}
+
+.nonSelectedCircle{
+  transition: all 0.3s ease-in-out;
+}
+
+.meetTheTeamDiv{
+/*width: 15%;
+height: 100%;*/
+box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+background-image: url("/img/512x512HexPattern.png");
+background-blend-mode: multiply;
+border-radius: 15px;
+background-position: -10px 0;
+}
+
+.meetTheTeamDiv img{
+  filter: drop-shadow(10px 0px 5px #36363636);
+}
+
+.meetTheTeamDivFirst img{
+  filter: drop-shadow(10px 0px 5px #36363636);
+}
+
+.meetTheTeamDivFirst{
+background-image: url("/img/512x512HexPattern.png");
+background-blend-mode: multiply;
+background-position: -10px 0;
+}
+
+.boxShadow3D
+{
+  box-shadow: 1px 1px 0px rgba(0, 51, 51, 1),
+  2px 2px 0px rgba(0, 51, 51, 1),
+  3px 3px 0px rgba(0, 51, 51, 1),
+  4px 4px 0px rgba(0, 51, 51, 1),
+  5px 5px 0px rgba(0, 51, 51, 1),
+  6px 6px 0px rgba(0, 51, 51, 1),
+  7px 7px 0px rgba(0, 51, 51, 1),
+  8px 8px 0px rgba(0, 51, 51, 1),
+  9px 9px 0px rgba(0, 51, 51, 1),
+  10px 10px 0px rgba(0, 51, 51, 1);
+}
+
+.verticalCenter
+{
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.horizontalCenter
+{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }

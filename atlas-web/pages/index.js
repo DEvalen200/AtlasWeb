@@ -19,7 +19,7 @@ export default function Home() {
           name="viewport"
           content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
         />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="favicon/favicon.ico" />
 
         {/*<!-- Open Graph / Facebook -->*/}
         <meta property="og:type" content="website" />
@@ -51,7 +51,6 @@ export default function Home() {
         <a></a>
       </Link>*/}
 
-      {/*<Main />*/}
       <UnderConstruction />
 
       {/* <Script src='/customRedirect.js' /> */}
